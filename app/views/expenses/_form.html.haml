@@ -1,0 +1,12 @@
+= form_for(current_user) do |f|
+  = f.fields_for :expenses do |ff|
+    .field
+      = f.label :name
+      %br/
+      = f.text_field :name
+    .field
+      = f.label :price
+      %br/
+      = f.text_field :price
+    .actions
+      = f.submit
