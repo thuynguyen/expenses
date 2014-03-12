@@ -1,0 +1,9 @@
+= simple_form_for(@place) do |f|
+  = f.input :name, collection: [["Dam Cuoi", "cuoi"], ["Di Cho", "cho"], ["Di Sieu Thi", "sithi"]]
+  = f.input :start_date, as: :string, :discard_day => true, :start_year => Date.today.year, :end_year => (Date.today.year+10), :input_html => {:class => "datepicker"}
+  = f.fields_for :expenses do |e|
+    = e.input :name, as: :boolean, label: e.object.name
+    = e.input :price, as: :text
+  = f.hidden_field :user_id, value: current_user.id
+  .actions
+    = f.submit

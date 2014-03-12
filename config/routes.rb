@@ -1,4 +1,6 @@
 Assumes::Application.routes.draw do
+  resources :places
+
   resources :expenses
 
   devise_for :users

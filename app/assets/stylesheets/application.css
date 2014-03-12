@@ -10,4 +10,6 @@
  *
  *= require_self
  *= require_tree .
+ *= require jquery.mobile-1.4.2.min
+ *= require places
  */

@@ -3,7 +3,7 @@ class CreateExpenses < ActiveRecord::Migration
     create_table :expenses do |t|
       t.string :name
       t.float :price
-      t.references :user
+      t.references :place
 
       t.timestamps
     end

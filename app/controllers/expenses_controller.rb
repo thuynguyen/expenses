@@ -12,10 +12,7 @@ class ExpensesController < ApplicationController
 
   # GET /expenses/new
   def new
-    ["Ca", "Thit", "Rau", "Trung", "HaiSan", "Gao", "Dau", "Lac(Dau Phong)", "Dau", "Duong", "Sua", "Keo/Banh"].each do |name| 
-      current_user.expenses << Expense.new(name: name)
-    end
-    @expenses = current_user.expenses
+    
   end
 
   # GET /expenses/1/edit

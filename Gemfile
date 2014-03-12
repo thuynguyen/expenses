@@ -7,6 +7,7 @@ gem 'rails', '4.0.0'
 
 gem 'pg'
 gem 'devise'
+gem 'simple_form'
 
 
 # Gems used only for assets and not required
@@ -14,7 +15,7 @@ gem 'devise'
 group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
-
+  gem 'haml'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
